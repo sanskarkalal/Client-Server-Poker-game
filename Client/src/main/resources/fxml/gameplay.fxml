@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.shape.Rectangle?>
+
+
+
+
+<AnchorPane fx:id="root" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+
+    <ImageView fx:id="card1" AnchorPane.topAnchor="10.0" AnchorPane.leftAnchor="10.0" visible="false"/>
+    <ImageView fx:id="card2" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" visible="false"/>
+    <ImageView fx:id="card3" AnchorPane.topAnchor="10.0" AnchorPane.rightAnchor="10.0" visible="false"/>
+    <ImageView fx:id="card4" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0" visible="false"/>
+
+
+    <ScrollPane fx:id="scrollPane" styleClass="scrollPane" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" prefHeight="250" prefWidth="500"  >
+        <VBox fx:id="logBox" styleClass="logBox" alignment="BOTTOM_CENTER" >
+            <Label fx:id="chatLog" styleClass="chatLog" textAlignment="CENTER" text="hi"/>
+        </VBox>
+    </ScrollPane>
+
+
+    <VBox fx:id="optionsWindow" alignment="CENTER" spacing="20"
+          AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0"
+          AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" styleClass="options" visible="false" >
+
+
+        <Label  text="OPTIONS" styleClass="optionsText"/>
+        <Button text="NEW LOOK" styleClass="newLookButton" onAction="#newLook"/>
+        <Button text="RESTART" styleClass="restartButton" onAction="#restartGame" />
+        <Button text="EXIT" styleClass="exitButton" onAction="#exitGame"/>
+        <Button text="Back to game" styleClass="backButton" onAction="#backToGame"/>
+
+    </VBox>
+
+
+
+
+        <HBox fx:id="buttons" spacing="20" AnchorPane.leftAnchor="100"
+              AnchorPane.rightAnchor="100"
+              AnchorPane.bottomAnchor="475"
+              alignment="CENTER">
+
+            <Button visible="false" fx:id="foldButton" text="FOLD" alignment="CENTER" styleClass="foldButton" onAction="#playerFold"/>
+            <Button visible="false" fx:id="restartGame" text="NEXT ROUND" alignment="CENTER" styleClass="nextButton" />
+            <Button visible="false" fx:id="playButton" text="PLAY" alignment="CENTER" styleClass="playButton" onAction="#playerPlay"/>
+        </HBox>
+
+        <Label fx:id="prompt" text="" styleClass="prompt"
+               AnchorPane.leftAnchor="100"
+               AnchorPane.rightAnchor="100"
+               AnchorPane.bottomAnchor="350"
+               alignment="CENTER"/>
+
+        <Button fx:id="imageButton" AnchorPane.topAnchor="20.0" AnchorPane.leftAnchor="15.0"
+                styleClass="image-button" onAction="#showSettings">
+            <graphic>
+                <ImageView fx:id="buttonImage" fitWidth="20" fitHeight="20"/>
+            </graphic>
+        </Button>
+
+        <HBox  fx:id="dealerText" styleClass="dealerInfo" alignment="BOTTOM_LEFT"  AnchorPane.topAnchor="165.0" AnchorPane.leftAnchor="85.0" >
+            <Label text="Dealer" styleClass="dealerText"/>
+        </HBox>
+
+        <VBox fx:id="cards" AnchorPane.topAnchor="20.0" AnchorPane.leftAnchor="70.0" alignment="CENTER">
+
+            <HBox alignment="TOP_LEFT" spacing="15" >
+                <HBox alignment="TOP_LEFT" spacing="10" styleClass="cards" >
+                    <ImageView fx:id="dealerCard1"/>
+                    <ImageView fx:id="dealerCard2"/>
+                    <ImageView fx:id="dealerCard3"/>
+                </HBox>
+            </HBox>
+
+        </VBox>
+
+
+
+
+        <VBox fx:id="playerInfo1"  AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" styleClass="player1">
+
+            <VBox spacing="20" alignment="CENTER_LEFT" styleClass="player1Info">
+                <Label text="Player1" styleClass="playerText" AnchorPane.bottomAnchor="165.0" AnchorPane.leftAnchor="85.0"/>
+                <HBox spacing="20">
+                    <Button fx:id="five" text="5$" onAction="#handleBetOne"  prefWidth="60" prefHeight="40" styleClass="betButton"/>
+                    <Button fx:id="ten" text="10$" onAction="#handleBetOne"  prefWidth="60" prefHeight="40" styleClass="betButton"/>
+                    <Button fx:id="fifteen" text="15$" onAction="#handleBetOne"  prefWidth="60" prefHeight="40" styleClass="betButton"/>
+                    <Button fx:id="twenty" text="20$" onAction="#handleBetOne"  prefWidth="60" prefHeight="40" styleClass="betButton"/>
+                    <Button fx:id="twentyFive" text="25$" onAction="#handleBetOne"  prefWidth="60" prefHeight="40" styleClass="betButton"/>
+
+                </HBox>
+                <HBox spacing="20" alignment="CENTER">
+                    <Label fx:id="anteLabel" layoutX="50" layoutY="50" text="ANTE/PLAY : 0$" styleClass="label"/>
+                    <Label fx:id="plusLabel" layoutX="50" layoutY="50" text="PLUS : 0$" styleClass="label"/>
+                    <Label fx:id="totalLabel" layoutX="50" layoutY="50" text="TOTAL : 100$" styleClass="label"/>
+
+                </HBox>
+
+            </VBox>
+
+
+            <HBox alignment="CENTER" spacing="10"  styleClass="cards">
+
+                <ImageView fx:id="player1Card1"/>
+                <ImageView fx:id="player1Card2"/>
+                <ImageView fx:id="player1Card3"/>
+            </HBox>
+
+        </VBox>
+
+
+        <VBox fx:id="playerinfo2" AnchorPane.rightAnchor= "20.0" AnchorPane.bottomAnchor="20.0" >
+
+            <VBox spacing="20" alignment="CENTER_LEFT" styleClass="player1Info">
+                <Label text="Player2" styleClass="playerText" AnchorPane.bottomAnchor="165.0" AnchorPane.leftAnchor="85.0"/>
+                <HBox spacing="20">
+                    <Button fx:id="pTwoFive" text="5$" onAction="#handleBetTwo"  prefWidth="60" prefHeight="40" styleClass="betButton"/>
+                    <Button fx:id="pTwoTen" text="10$" onAction="#handleBetTwo"  prefWidth="60" prefHeight="40" styleClass="betButton"/>
+                    <Button fx:id="pTwoFifteen" text="15$" onAction="#handleBetTwo"  prefWidth="60" prefHeight="40" styleClass="betButton"/>
+                    <Button fx:id="pTwoTwenty" text="20$" onAction="#handleBetTwo"  prefWidth="60" prefHeight="40" styleClass="betButton"/>
+                    <Button fx:id="pTwoTwentyFive" text="25$" onAction="#handleBetTwo"  prefWidth="60" prefHeight="40" styleClass="betButton"/>
+
+                </HBox>
+                <HBox spacing="20" alignment="CENTER">
+                    <Label fx:id="pTwoanteLabel" layoutX="50" layoutY="50" text="ANTE/PLAY : 0$" styleClass="label"/>
+                    <Label fx:id="pTwoplusLabel" layoutX="50" layoutY="50" text="PLUS : 0$" styleClass="label"/>
+                    <Label fx:id="pTwototalLabel" layoutX="50" layoutY="50" text="TOTAL : 100$" styleClass="label"/>
+
+                </HBox>
+
+            </VBox>
+
+            <HBox spacing="10" styleClass="cards" alignment="CENTER" >
+
+                <ImageView fx:id="player2Card1"/>
+                <ImageView fx:id="player2Card2"/>
+                <ImageView fx:id="player2Card3"/>
+            </HBox>
+
+        </VBox>
+
+
+
+
+
+
+
+
+
+
+
+
+</AnchorPane>

@@ -1,0 +1,223 @@
+.image-button {
+    -fx-background-color: transparent; /* No background */
+    -fx-padding: 0;                   /* Remove padding */
+    -fx-border-width: 0;              /* No border */
+}
+
+.root{
+    -fx-background-color: "0EB863";
+}
+
+.cards{
+    -fx-background-color: #F7502F;
+    -fx-border-width: 2px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 4, 0, 0, 1);
+             /* Font size */
+    -fx-padding: 10px 20px;        /* Padding */
+    -fx-background-radius: 10px;
+
+}
+
+
+.dealerInfo{
+    -fx-background-color: #D9D9D9;
+    -fx-border-width: 2px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 4, 0, 0, 1);
+    -fx-font-size: 20px;
+
+    -fx-stroke: white;
+    -fx-stroke-width: 2px;
+    -fx-padding: 20px 130px;        /* Padding */
+    -fx-background-radius: 10px;
+    -fx-font-family: silkScreen, sans-serif;
+}
+
+.betButton{
+
+    -fx-background-color: #F09595;
+    -fx-font-size: 13px;
+    -fx-stroke: white;
+    -fx-stroke-width: 2px;
+    -fx-background-radius: 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 4, 0, 0, 1);
+    -fx-font-family: silkScreen, sans-serif;
+
+
+}
+
+.label{
+    -fx-font-size: 15px;
+}
+.playerText{
+    -fx-font-size: 20px;
+}
+.player1Info{
+    -fx-background-color: #D9D9D9;
+    -fx-border-width: 2px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 4, 0, 0, 1);
+
+    -fx-padding: 10px 20px;        /* Padding */
+    -fx-background-radius: 10px;
+    -fx-font-family: silkScreen, sans-serif;
+}
+
+
+.prompt {
+    -fx-text-alignment: center;
+    -fx-font-size: 22px;
+    -fx-text-fill: white;
+    -fx-stroke: #000000;
+    -fx-stroke-width: 10px; /* Padding */
+    -fx-effect: dropshadow(gaussian, rgba(237, 69, 69, 0.75), 4, 0, 0, 2);
+    -fx-font-family: silkScreen, sans-serif;
+
+}
+
+.playButton{
+
+
+    -fx-background-color: #E59F71;
+    -fx-border-width: 2px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 4, 0, 0, 1);
+    -fx-text-fill: black;
+    -fx-font-size: 20px;           /* Font size */
+    -fx-padding: 10px 20px;        /* Padding */
+    -fx-background-radius: 10px;
+    -fx-stroke: #ffffff;
+    -fx-stroke-width: 20px;
+    -fx-font-family: silkScreen, sans-serif;
+    /* Rounded corners */
+}
+/* Rectangle 1 */
+
+.foldButton{
+
+
+    -fx-background-color: #c62727;
+    -fx-border-width: 2px;
+
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 4, 0, 0, 1);
+    -fx-text-fill: white;
+    -fx-font-size: 20px;           /* Font size */
+    -fx-padding: 10px 20px;        /* Padding */
+    -fx-background-radius: 10px;
+    -fx-stroke: #ffffff;
+
+    -fx-stroke-width: 20px;
+    -fx-font-family: silkScreen, sans-serif;
+    /* Rounded corners */
+}
+
+.nextButton {
+    -fx-background-color: #dd6e1b;
+    -fx-border-width: 2px;
+
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 4, 0, 0, 1);
+    -fx-text-fill: white;
+    -fx-font-size: 20px;           /* Font size */
+    -fx-padding: 10px 20px;        /* Padding */
+    -fx-background-radius: 10px;
+    -fx-stroke: #ffffff;
+
+    -fx-stroke-width: 20px;
+    -fx-font-family: silkScreen, sans-serif;
+}
+
+
+.optionsText{
+    -fx-font-size: 70px;
+    -fx-text-fill: white;
+    -fx-font-family: Jaro;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 4, 0, 0, 2);
+    -fx-padding: 10px;
+}
+
+
+
+
+.newLookButton{
+    /* Style for custom rectangle using StackPane */
+
+    -fx-background-color: linear-gradient(to right, #4FA9A2, #7E66DC 26.5%, #4FA9A2 74.5%, #BA47C2);
+    -fx-background-radius: 37px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 4, 0, 0, 4);
+    -fx-padding: 10 30; /* Adjust padding as needed */
+    -fx-font-size: 20px;
+    -fx-text-fill: white;
+    -fx-stroke: #000000;
+    -fx-stroke-width: 2px;
+    -fx-font-family: silkScreen, sans-serif;
+
+}
+
+.restartButton{
+
+    -fx-background-color: #E59F71;
+    -fx-border-width: 2px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 4, 0, 0, 1);
+    -fx-text-fill: black;
+    -fx-font-size: 20px;           /* Font size */
+    -fx-padding: 10px 20px;        /* Padding */
+    -fx-background-radius: 10px;
+    -fx-stroke: #ffffff;
+    -fx-stroke-width: 20px;
+    -fx-font-family: silkScreen, sans-serif;
+}
+
+.exitButton{
+    -fx-background-color: #c62727;
+    -fx-border-width: 2px;
+
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 4, 0, 0, 1);
+    -fx-text-fill: white;
+    -fx-font-size: 20px;           /* Font size */
+    -fx-padding: 10px 20px;        /* Padding */
+    -fx-background-radius: 10px;
+    -fx-stroke: #ffffff;
+
+    -fx-stroke-width: 20px;
+    -fx-font-family: silkScreen, sans-serif;
+}
+
+.backButton{
+    -fx-background-color: rgb(46, 43, 43);
+    -fx-border-width: 2px;
+
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 4, 0, 0, 1);
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 20px;           /* Font size */
+    -fx-padding: 10px 20px;        /* Padding */
+    -fx-background-radius: 10px;
+    -fx-stroke: #ffffff;
+
+
+    -fx-stroke-width: 20px;
+    -fx-font-family: silkScreen, sans-serif;
+
+}
+
+.logBox {
+    -fx-background-color: rgb(46, 43, 43);
+    -fx-border-width: 2px;
+    -fx-min-width: 500;
+    -fx-min-height: 250;
+
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 4, 0, 0, 1);
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 20px;           /* Font size */
+    -fx-padding: 10px 20px;        /* Padding */
+    -fx-background-radius: 10px;
+    -fx-stroke: #ffffff;
+
+
+    -fx-stroke-width: 20px;
+    -fx-font-family: silkScreen, sans-serif;
+}
+
+.chatLog{
+    -fx-text-fill: white;
+}
+
+
+
+

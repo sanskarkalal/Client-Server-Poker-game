@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'silkScreen';
+    src: url('fonts/slkscr.ttf');
+}
+@font-face {
+    font-family: 'Jaro';
+    src: url('fonts/jaro.ttf');
+}
+
+.border{
+    -fx-background-color: #0EB863;
+}
+
+.welcomeLabel {
+    -fx-font-size: 70px;
+    -fx-text-fill: white;
+    -fx-font-family: Jaro;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 4, 0, 0, 2);
+    -fx-padding: 10px;
+}
+
+.start{
+
+
+    -fx-background-color: #E59F71;
+    -fx-border-width: 2px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 4, 0, 0, 1);
+    -fx-text-fill: black;
+    -fx-font-size: 20px;           /* Font size */
+    -fx-padding: 10px 20px;        /* Padding */
+    -fx-background-radius: 10px;
+    -fx-stroke: #ffffff;
+    -fx-stroke-width: 20px;
+    -fx-font-family: silkScreen, sans-serif;
+            /* Rounded corners */
+    }
+/* Rectangle 1 */
+
+.exit{
+
+
+    -fx-background-color: #c62727;
+    -fx-border-width: 2px;
+
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 4, 0, 0, 1);
+    -fx-text-fill: white;
+    -fx-font-size: 20px;           /* Font size */
+    -fx-padding: 10px 20px;        /* Padding */
+    -fx-background-radius: 10px;
+    -fx-stroke: #ffffff;
+
+    -fx-stroke-width: 20px;
+    -fx-font-family: silkScreen, sans-serif;
+    /* Rounded corners */
+}
+
