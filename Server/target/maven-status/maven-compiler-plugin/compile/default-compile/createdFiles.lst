@@ -1,8 +1,9 @@
 Deck.class
+Player.class
 ServerController.class
 ThreeCardLogic.class
 PokerInfo.class
 Card.class
+ServerController$ClientThread.class
 Dealer.class
 JavaFXTemplate.class
-GameHandler.class
