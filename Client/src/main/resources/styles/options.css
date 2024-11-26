@@ -1,0 +1,75 @@
+.optionsText{
+    -fx-font-size: 70px;
+    -fx-text-fill: white;
+    -fx-font-family: Jaro;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 4, 0, 0, 2);
+    -fx-padding: 10px;
+}
+.root{
+    -fx-background-color: #2b2727;
+    -fx-background-radius: 10px;
+    -fx-padding: 10px;
+}
+
+
+
+.newLookButton{
+    /* Style for custom rectangle using StackPane */
+
+    -fx-background-color: linear-gradient(to right, #4FA9A2, #7E66DC 26.5%, #4FA9A2 74.5%, #BA47C2);
+    -fx-background-radius: 37px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 4, 0, 0, 4);
+    -fx-padding: 10 30; /* Adjust padding as needed */
+    -fx-font-size: 20px;
+    -fx-text-fill: white;
+    -fx-stroke: #000000;
+    -fx-stroke-width: 2px;
+    -fx-font-family: silkScreen, sans-serif;
+
+}
+
+.restartButton{
+
+    -fx-background-color: #E59F71;
+    -fx-border-width: 2px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 4, 0, 0, 1);
+    -fx-text-fill: black;
+    -fx-font-size: 20px;           /* Font size */
+    -fx-padding: 10px 20px;        /* Padding */
+    -fx-background-radius: 10px;
+    -fx-stroke: #ffffff;
+    -fx-stroke-width: 20px;
+    -fx-font-family: silkScreen, sans-serif;
+}
+
+.exitButton{
+    -fx-background-color: #c62727;
+    -fx-border-width: 2px;
+
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 4, 0, 0, 1);
+    -fx-text-fill: white;
+    -fx-font-size: 20px;           /* Font size */
+    -fx-padding: 10px 20px;        /* Padding */
+    -fx-background-radius: 10px;
+    -fx-stroke: #ffffff;
+
+    -fx-stroke-width: 20px;
+    -fx-font-family: silkScreen, sans-serif;
+}
+
+.backButton{
+    -fx-background-color: rgb(46, 43, 43);
+    -fx-border-width: 2px;
+
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 4, 0, 0, 1);
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 20px;           /* Font size */
+    -fx-padding: 10px 20px;        /* Padding */
+    -fx-background-radius: 10px;
+    -fx-stroke: #ffffff;
+
+
+    -fx-stroke-width: 20px;
+    -fx-font-family: silkScreen, sans-serif;
+
+}
